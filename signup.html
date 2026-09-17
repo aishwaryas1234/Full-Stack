@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign-up Page</title>
+    </head>
+    <body>
+        <h1>Student Sign up Form</h1>
+        <form>
+            <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name" required><br><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" required><br><br><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Other Information</legend>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Phone" required pattern="[0-9]{10}" title="Please enter 10 digit-number"><br><br><br>
+            <label for="pasword">Password:</label>
+            <input type="text" id="password" placeholder="Password" required><br><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" placeholder="Date of Birth" required><br><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Male
+            <input type="radio" id="female" name="gender" value="female" required> Female
+            <input type="radio" id="others" name="gender" value="others" required> Others<br><br><br>
+            <label for="skils">Skills:</label>
+            <input type="checkbox" id="skills">HTML
+            <input type="checkbox" id="skills">CSS
+            <input type="checkbox" id="skills">Java
+            <input type="checkbox" id="skills">JavaScript <br><br><br>
+            <label for="semester">Semester:</label>
+            <select id="semester">
+                <option value="Select semester">Select Semester</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br><br><br>
+            <label for="address">Address:</label>
+            <textarea id="address" rows="4" cols="50" placeholder="Address" required></textarea><br><br><br>
+            <label for="prcentage">Percentage:</label>
+            <input type="range" min="0" max="100" required><br><br><br>
+            </fieldset><br><br>
+            <button type="submit">Sign up</button>
+            <a href="login.html">Login</a>
+        </form>
+    </body>
+</html>
